@@ -1,0 +1,15 @@
+Django==4.0.3
+dnspython==2.2.0
+env==0.1.0
+google-auth==2.6.2
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+ipython==8.2.0
+npyscreen==4.10.5
+oauthlib==3.2.0
+Pillow==9.0.1
+ptyprocess==0.7.0
+pytz==2019.3
+sqlparse==0.3.0
+systemd-python==234
+virtualenv==20.14.0
