@@ -13,6 +13,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps',
+    'snowpenguin.django.recaptcha3',
 ]
 
 MIDDLEWARE = [
@@ -109,3 +110,8 @@ try:
     from .local_settings import *
 except ImportError:
     from .prod_settings import *
+
+RECAPTCHA_PRIVATE_KEY = '6Ldf1HsfAAAAADqeycEfxGZx-XlaMzN7v7VXCl5z'
+RECAPTCHA_PUBLIC_KEY = '6Ldf1HsfAAAAACri51K0lLnctEQ9VrMGzk9-cOvc'
+RECAPTCHA_DEFAULT_ACTION = 'generic'
+RECAPTCHA_SCORE_THRESHOLD = 0.5

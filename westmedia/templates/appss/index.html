@@ -1,4 +1,4 @@
-{% load static %}
+{% load static recaptcha3 %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -25,6 +25,9 @@
              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
            <![endif]-->
+        {% recaptcha_init %}
+        {% recaptcha_ready action_name='homepage' %}
+
         </head>
         <body id="home">
             <!-- Header -->

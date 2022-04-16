@@ -1,8 +1,8 @@
 from django import forms
 from .models import CallBack
+# from snowpenguin.django.recaptcha3.fields import ReCaptchaField
 
 class CallBackForm(forms.ModelForm):
- 
     class Meta:
         model = CallBack
         fields = ['email']
@@ -10,12 +10,7 @@ class CallBackForm(forms.ModelForm):
         def clean_email(self):
             email = self.cleaned_data.get('email')
             return email
-        # model = CallBack
-        # fields = '__all__'
-        # fields = ("name", "email", "message",)
-        # widgets = {
-        #     "name":forms.TextInput(attrs={'class': 'comment-name','placeholder': 'Name*'}),
-        #     "email":forms.EmailInput(attrs={'class': 'comment-email','placeholder': 'Email*'}),
-        #     "message":forms.TextInput(attrs={'class': 'comment-message', 'placeholder': 'Message...'})
-        # }
+        # def clean_captcha(self):
+        #     captcha = self.cleaned_data.get('captcha')
+        #     return captcha
         
